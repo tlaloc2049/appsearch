@@ -93,3 +93,8 @@ https://cloud.google.com/tools/intellij/docs/deploy-local#community
 
 (Not required) Install Google Cloud Plugin for Intellij:
 https://cloud.google.com/tools/intellij/docs/quickstart-IDEA
+
+Spring info:
+ https://docs.spring.io/spring/docs/5.0.1.RELEASE/spring-framework-reference/web.html#mvc-container-config
+ https://docs.spring.io/spring/docs/5.0.1.RELEASE/spring-framework-reference/web.html#mvc-ann-responsebody
+ https://www.boraji.com/spring-4-mvc-hello-world-example

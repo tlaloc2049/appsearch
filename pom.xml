@@ -109,12 +109,12 @@
         <configuration>
           <devserver.host>0.0.0.0</devserver.host>
           <devserver.port>8080</devserver.port>
-          <!--
+
           <jvmFlags>
             <jvmFlag>-Xdebug</jvmFlag>
             <jvmFlag>-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005</jvmFlag>
           </jvmFlags>
-          -->
+
         </configuration>
       </plugin>
 
