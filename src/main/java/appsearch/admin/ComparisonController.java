@@ -22,7 +22,7 @@ public class ComparisonController {
     @ResponseBody
     public Map compareResults(@RequestParam(name="term") String term,
                               @RequestParam(name="country") String country,
-                              @RequestParam(name="lang") String lang) {
+                              @RequestParam(name="lang", required = false) String lang) {
         Map<String, List> response = new HashMap<>();
         response.put("appsearch", null);
         response.put("itunes", itunesFeedDownloader.saveQueryResults(term, country, lang));

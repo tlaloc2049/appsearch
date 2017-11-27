@@ -21,8 +21,10 @@ public class ItunesFeedDownloader {
             URLFetchService urlFetchService = URLFetchServiceFactory.getURLFetchService();
             String url = "https://itunes.apple.com/search?entity=software&" +
                     "term=" + URLEncoder.encode(term, "UTF-8") + "&" +
-                    "country=" + country + "&" +
-                    "lang=" + lang;
+                    "country=" + country;
+            if (lang != null) {
+                url += "&lang=" + lang;
+            }
             HTTPRequest request = new HTTPRequest(new URL(url), HTTPMethod.GET);
             HTTPResponse response =	urlFetchService.fetch(request);
             if (response.getResponseCode() == 200) {
